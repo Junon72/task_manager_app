@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <title>Task manager</title>
     </head>
+
     <body>
         <h1>Outside!</h1>
         {% block content %}
@@ -13,7 +16,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <script type="text/javascript">
-            $(document).ready(function() {
+            $(document).ready(function () {
                 $('.collapsible').collapsible();
             });
             $('.datepicker').pickadate({
@@ -22,13 +25,13 @@
                 today: 'Today',
                 clear: 'Clear',
                 close: 'Ok',
-                closeOnSelect: false // Close upon selecting a date,
-                container: undefined, // ex. 'body' will append picker to body
-              });
-            document.getElementById("matfix").addEventListener("click", function(e) {
+                closeOnSelect: false // Close upon selecting a date
+            });
+            document.getElementById("matfix").addEventListener("click", function (e) {
                 e.stopPropagation();
             });
         </script>
-    
+
     </body>
+
 </html>
