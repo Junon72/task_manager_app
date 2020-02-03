@@ -55,7 +55,7 @@ def get_categories():
     return render_template('categories.html',
                            categories=mongo.db.categories.find())
     
-@app.route('/edit_category/<category_id>)
+@app.route('/edit_category/<category_id>')
 def edit_category(category_id):
     return render_template('editcategory.html',
     category = mongo.db.categories.find_one(
