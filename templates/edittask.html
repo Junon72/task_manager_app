@@ -13,7 +13,7 @@
                             {% if cat.category_name == task.category_name %}
                             <option value="{{cat.category_name}}" select>{{cat.category_name}}</option>
                             {% else %}
-
+                            <option value="{{cat.category_name}}">{{cat.category_name}}</option>
                             {% endif %}
                         {% endfor %}
                     </select>
@@ -46,6 +46,7 @@
                     {% if task.is_urgent %}
                     <input id="is_urgent" name="is_urgent" type="checkbox" checked>
                     {% else %}
+                    <input id="is_urgent" name="is_urgent" type="checkbox">
                     {% endif %}
                     <span class="lever"></span>
                     Is Urgent
